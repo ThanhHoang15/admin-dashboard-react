@@ -3,12 +3,12 @@ import "./footer.scss"
 export const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-log-text">
+      <span>
         THANH HOANG
-      </div>
-      <div>
+      </span>
+      <span>
         © admin-dasboard-react-thanh-hoang
-      </div>    
+      </span>   
     </div>
   )
 }

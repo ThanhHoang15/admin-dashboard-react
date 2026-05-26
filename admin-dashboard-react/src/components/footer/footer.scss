@@ -3,5 +3,21 @@
     font-size: 10px;
     justify-content: space-between;
     margin: 0 10px;
+    span{
+        &:first-child{
+            font-weight: bold;
+        }
+        &:last-child{
+            font-style: italic;
+        }
+        &:hover{
+            background-color: red;
+        }
+    }
+
+
+
+
+
 }
 

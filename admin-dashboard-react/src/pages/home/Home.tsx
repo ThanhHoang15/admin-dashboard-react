@@ -1,6 +1,7 @@
 import "./home.scss";
 import {Topbox} from "../../components/topBox/Topbox";
 import { Chartbox } from "../../components/chartBox/Chartbox";
+import { Barchart} from "../../components/barChart/Barchart";
 import {chartBoxUser} from "../../data.ts";
 
 export const Home = () => {
@@ -15,7 +16,7 @@ export const Home = () => {
       <div className="box box5"><Chartbox/></div>
       <div className="box box6"><Chartbox/></div>
       <div className="box box7">box7</div>
-      <div className="box box8">box8</div>
+      <div className="box box8"><Barchart/></div>
       <div className="box box9">box9</div>
     </div>
   )

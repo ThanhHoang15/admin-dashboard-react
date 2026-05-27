@@ -212,3 +212,20 @@ export const chartBoxUser = {
     { name: "Sat", users: 450 },
   ],
 };
+
+
+export const barChart = [
+  { month: 'Jan', revenue: 4000 },
+  { month: 'Feb', revenue: 3000 },
+  { month: 'Mar', revenue: 2000 },
+  { month: 'Apr', revenue: 2780 },
+  { month: 'May', revenue: 1890 },
+  { month: 'Jun', revenue: 2390 },
+  { month: 'Jul', revenue: 2190 },
+  { month: 'Aug', revenue: 3460 },
+  { month: 'Sept', revenue: 8490 },
+  { month: 'Oct', revenue: 1290 },
+  { month: 'Nov', revenue: 6790 },
+  { month: 'Dec', revenue: 2590 },
+
+]

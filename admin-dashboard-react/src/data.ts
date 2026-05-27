@@ -214,18 +214,82 @@ export const chartBoxUser = {
 };
 
 
-export const barChart = [
-  { month: 'Jan', revenue: 4000 },
-  { month: 'Feb', revenue: 3000 },
-  { month: 'Mar', revenue: 2000 },
-  { month: 'Apr', revenue: 2780 },
-  { month: 'May', revenue: 1890 },
-  { month: 'Jun', revenue: 2390 },
-  { month: 'Jul', revenue: 2190 },
-  { month: 'Aug', revenue: 3460 },
-  { month: 'Sept', revenue: 8490 },
-  { month: 'Oct', revenue: 1290 },
-  { month: 'Nov', revenue: 6790 },
-  { month: 'Dec', revenue: 2590 },
+export const barChartLeft = [
+  { month: 'Jan', users: 4031 },
+  { month: 'Feb', users: 3767 },
+  { month: 'Mar', users: 2023 },
+  { month: 'Apr', users: 2780 },
+  { month: 'May', users: 1891 },
+  { month: 'Jun', users: 2394 },
+  { month: 'Jul', users: 2191 },
+  { month: 'Aug', users: 3466 },
+  { month: 'Sept', users: 8492 },
+  { month: 'Oct', users: 4292 },
+  { month: 'Nov', users: 6793 },
+  { month: 'Dec', users: 3591 },
 
+]
+
+export const barChartRight = [
+  { month: 'Jan', profit: 43314 },
+  { month: 'Feb', profit: 13767 },
+  { month: 'Mar', profit: 20233 },
+  { month: 'Apr', profit: 27802 },
+  { month: 'May', profit: 12891 },
+  { month: 'Jun', profit: 52394 },
+  { month: 'Jul', profit: 22191 },
+  { month: 'Aug', profit: 34666 },
+  { month: 'Sept', profit: 28492 },
+  { month: 'Oct', profit: 24292 },
+  { month: 'Nov', profit: 56793 },
+  { month: 'Dec', profit: 43591 },
+]
+
+
+
+
+
+export const revenueChart = [
+  {
+    day: 'Mon',
+    mobile: 4000,
+    desktop: 2400,
+    tablet: 1200,
+  },
+  {
+    day: 'Tue',
+    mobile: 3000,
+    desktop: 9800,
+    tablet: 1500,
+  },
+  {
+    day: 'Wed',
+    mobile: 2500,
+    desktop: 4200,
+    tablet: 1800,
+  },
+  {
+    day: 'Thu',
+    mobile: 3800,
+    desktop: 3100,
+    tablet: 2200,
+  },
+  {
+    day: 'Fri',
+    mobile: 4200,
+    desktop: 2700,
+    tablet: 2400,
+  },
+  {
+    day: 'Sat',
+    mobile: 5000,
+    desktop: 3900,
+    tablet: 2800,
+  },
+  {
+    day: 'Sun',
+    mobile: 3200,
+    desktop: 2100,
+    tablet: 1600,
+  },
 ]

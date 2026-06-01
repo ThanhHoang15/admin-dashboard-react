@@ -1,8 +1,9 @@
-.barChartLeftq{
+.barChartLeft{
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    
 
     .label{
         text-transform: uppercase;
@@ -11,6 +12,9 @@
 
 
     }
-
+    BarChart{
+        display: flex;
+        flex-grow: 1;
+    }
 
 }

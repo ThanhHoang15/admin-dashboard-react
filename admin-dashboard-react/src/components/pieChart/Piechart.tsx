@@ -46,18 +46,14 @@ export const Piechart = () => {
             />
         </PieChart>
         <div className="chartInfo">
-            <div className="mobile">
-                <span>O</span>
-                <div className="mobileLabel"> Mobile</div>
-            </div>
-            <div className="desktop">
-                <span>O</span>
-                <div className="desktopLabel"> Desktop</div>          
-            </div>
-            <div className="laptop">
-                <span>O</span>
-                <div className="laptopLabel">Laptop</div>
-            </div>
+            {pieChartData.map(data => {
+                return(
+                    <div className={data.name}>
+                        <span>{data.value}%</span>
+                        <div className={data.fill}> {data.name}</div>
+                    </div>
+                     )
+                })}
         </div>
 
     </div>

@@ -1,0 +1,22 @@
+img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+
+
+.dataGrid{
+    padding: 20px;
+
+    .MuiDataGrid-toolbar{                       //inspect in devtool to find this class
+        flex-direction: row-reverse;            //reverse 
+       .MuiDataGrid-toolbarQuickFilter {
+            margin-right: auto;                 //make the search tool on the way on the left
+        }                                       // margin-right: auto --> Search box [auto space............] Other buttons
+    }
+
+
+}

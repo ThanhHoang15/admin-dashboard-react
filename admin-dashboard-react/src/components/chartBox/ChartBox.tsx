@@ -66,10 +66,10 @@ export const Chartbox = (props : Props) => {
     <div className="chartBox">
         <div className="left">
             <div className="title">
-                <img src="user.svg" alt="" />
+                <img src="props.icon" alt="" />
                 <span>{props.title}</span>
             </div>
-            <h1 className="value">11.238</h1>
+            <h1 className="value">{props.number}</h1>
             <Link to = "/" style={{color : "#71e11c"}}>View All</Link>
         </div>
 
@@ -91,7 +91,7 @@ export const Chartbox = (props : Props) => {
                 </LineChart>
             </div>
             <div className="chartInfo">
-                <div className="percentage">{props.percentage}</div>
+                <div className="percentage" style={{color : props.percentage > 0 ? "yellowgreen" : "tomato" }}>{props.percentage}%</div>
                 <div className="duration">this month</div>
             </div>
 

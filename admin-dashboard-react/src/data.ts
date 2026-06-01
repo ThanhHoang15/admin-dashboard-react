@@ -293,3 +293,59 @@ export const revenueChart = [
     tablet: 1600,
   },
 ]
+export const chartBoxRevenue = {
+  color: "#36A2EB",
+  icon: "/revenueIcon.svg",
+  title: "Total Revenue",
+  number: "$56.432",
+  dataKey: "revenue",
+  percentage: 12,
+
+  chartData: [
+    { name: "Sun", revenue: 3200 },
+    { name: "Mon", revenue: 4100 },
+    { name: "Tue", revenue: 3800 },
+    { name: "Wed", revenue: 5200 },
+    { name: "Thu", revenue: 4700 },
+    { name: "Fri", revenue: 3900 },
+    { name: "Sat", revenue: 3500 },
+  ],
+};
+
+export const chartBoxProducts = {
+  color: "#FFBB28",
+  icon: "/productIcon.svg",
+  title: "Total Products",
+  number: "238",
+  dataKey: "products",
+  percentage: 21,
+
+  chartData: [
+    { name: "Sun", products: 120 },
+    { name: "Mon", products: 180 },
+    { name: "Tue", products: 160 },
+    { name: "Wed", products: 220 },
+    { name: "Thu", products: 190 },
+    { name: "Fri", products: 240 },
+    { name: "Sat", products: 210 },
+  ],
+};
+
+export const chartBoxRatio = {
+  color: "#82ca9d",
+  icon: "/ratioIcon.svg",
+  title: "Total Ratio",
+  number: "2.6",
+  dataKey: "ratio",
+  percentage: -4,
+
+  chartData: [
+    { name: "Sun", ratio: 1.2 },
+    { name: "Mon", ratio: 1.8 },
+    { name: "Tue", ratio: 1.5 },
+    { name: "Wed", ratio: 0.9 },
+    { name: "Thu", ratio: 0.5 },
+    { name: "Fri", ratio: 0.7 },
+    { name: "Sat", ratio: 0.8 },
+  ],
+};

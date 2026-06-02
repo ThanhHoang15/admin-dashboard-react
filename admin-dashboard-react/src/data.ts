@@ -1,3 +1,5 @@
+import { GridColDef } from "@mui/x-data-grid";
+
 export const menu = [
   {
     id: 1,
@@ -171,26 +173,26 @@ export const topDealUsers = [
     amount: "1.560",
   },
   {
-  id: 8,
-  img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  username: "Sophia Turner",
-  email: "sophia@gmail.com",
-  amount: "1.432",
-},
-{
-  id: 9,
-  img: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  username: "Michael Scott",
-  email: "michael@gmail.com",
-  amount: "1.278",
-},
-{
-  id: 10,
-  img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  username: "Emma Wilson",
-  email: "emma@gmail.com",
-  amount: "1.104",
-},
+    id: 8,
+    img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    username: "Sophia Turner",
+    email: "sophia@gmail.com",
+    amount: "1.432",
+  },
+  {
+    id: 9,
+    img: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    username: "Michael Scott",
+    email: "michael@gmail.com",
+    amount: "1.278",
+  },
+  {
+    id: 10,
+    img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    username: "Emma Wilson",
+    email: "emma@gmail.com",
+    amount: "1.104",
+  },
 ];
 
 
@@ -349,3 +351,110 @@ export const chartBoxRatio = {
     { name: "Sat", ratio: 0.8 },
   ],
 };
+
+
+
+
+
+export const rows = [
+ {
+  id: 10,
+  img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Stark",
+  firstName: "Sansa",
+  email: "sansa@winterfell.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: true,
+},
+{
+  id: 11,
+  img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Stark",
+  firstName: "Bran",
+  email: "bran@winterfell.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: true,
+},
+{
+  id: 12,
+  img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Stark",
+  firstName: "Robb",
+  email: "robb@winterfell.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: false,
+},
+{
+  id: 13,
+  img: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Snow",
+  firstName: "Ygritte",
+  email: "ygritte@wildlings.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: true,
+},
+{
+  id: 14,
+  img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Targaryen",
+  firstName: "Viserys",
+  email: "viserys@dragonstone.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: false,
+},
+{
+  id: 15,
+  img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Lannister",
+  firstName: "Tyrion",
+  email: "tyrion@casterlyrock.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: true,
+},
+{
+  id: 16,
+  img: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Baratheon",
+  firstName: "Robert",
+  email: "robert@kingslanding.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: false,
+},
+{
+  id: 17,
+  img: "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Greyjoy",
+  firstName: "Theon",
+  email: "theon@pyke.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: true,
+},
+{
+  id: 18,
+  img: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Mormont",
+  firstName: "Jorah",
+  email: "jorah@bearisland.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: true,
+},
+{
+  id: 19,
+  img: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  lastName: "Bolton",
+  firstName: "Ramsay",
+  email: "ramsay@dreadfort.com",
+  phone: "123 456 789",
+  createdAt: "01.02.2023",
+  verified: false,
+},
+  ];

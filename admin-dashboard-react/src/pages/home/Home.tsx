@@ -3,7 +3,7 @@ import {Topbox} from "../../components/topBox/Topbox";
 import { Chartbox } from "../../components/chartBox/Chartbox";
 import { BarchartLeft} from "../../components/barChart/BarchartLeft";
 import { BarchartRight} from "../../components/barChart/barChartRight";
-import {chartBoxUser, chartBoxRevenue, chartBoxProducts, chartBoxRatio} from "../../data.ts";
+import {chartBoxUser, chartBoxRevenue, chartBoxProducts, chartBoxRatio} from "../../data";
 import { Revenuechart } from "../../components/revenueChart/Revenuechart.tsx";
 import {Piechart} from "../../components/pieChart/Piechart.tsx"
 

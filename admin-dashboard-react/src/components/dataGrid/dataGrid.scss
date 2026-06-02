@@ -10,6 +10,7 @@ img{
 
 .dataGrid{
     padding: 20px;
+    height: 100%;
 
     .MuiDataGrid-toolbar{                       //inspect in devtool to find this class
         flex-direction: row-reverse;            //reverse 

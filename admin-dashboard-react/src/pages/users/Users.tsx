@@ -48,19 +48,11 @@ const columns: GridColDef[] = [
     editable: true,
     type: "string",
   },
-  {
-    field: "age",
-    headerName: "Age", // adjust width of age column here
-    type: "number",
-    width: 110,
-    editable: true,
-    align: "left", // adjust data left right center
-    headerAlign: "left", // adjust header left right center
-  },
+
   {
     field: "email",
     headerName: "Email",
-    width: 250, // adjust width of last name column here
+    width: 200, // adjust width of last name column here
     type: "string",
     editable: true,
   },
@@ -70,6 +62,8 @@ const columns: GridColDef[] = [
     width: 150, // adjust width of last name column here
     editable: true,
     type: "number",
+    headerAlign:"left",
+    align:"left",
   },
   {
     field: "createdAt",
@@ -80,7 +74,7 @@ const columns: GridColDef[] = [
   {
     field: "action",
     headerName: "Action",
-    width: 250,
+    width: 200,
     renderCell: (params) => {
       return (
         <div className="action">

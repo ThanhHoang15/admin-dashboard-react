@@ -1,7 +1,81 @@
-.modal{
-    position: fixed;
-    background-color: rgb(9, 9, 9);
-    padding: 40px 200px;
+.addUser {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+
+  .modal {
+    width: 700px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 45px;
+    border-radius: 8px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .close {
+      position: absolute;
+      right: 18px;
+      top: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(180, 180, 180);
+      }
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .allField {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        input{
+        height: 30px;
+        padding: 5px;
+        margin-top: 5px;
+      }
+      .uploadImg{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 15px;
+      padding-left: 60px;
+     
+
+    }
+  }
+  
+  button{
+    padding: 5px 60px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    &:hover{
+      background-color: #f4eeff;
+      transition:5ms;
+    }
+  }
 
 
+
+
+
+  }
 }

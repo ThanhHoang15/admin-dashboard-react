@@ -17,6 +17,10 @@
     color: black;
     padding: 5px;
     border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background-color: rgb(211, 226, 255);
+    }
   }
 }
 

@@ -42,10 +42,6 @@ const columns: GridColDef[] = [
     editable: true,
     type: "string",
   },
-<<<<<<< HEAD
-
-=======
->>>>>>> 431c28d (add single)
   {
     field: "email",
     headerName: "Email",

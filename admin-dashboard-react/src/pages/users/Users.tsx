@@ -1,6 +1,6 @@
 import { GridColDef } from "@mui/x-data-grid";
 import { Datagrid } from "../../components/dataGrid/Datagrid";
-import { rows } from "../../data";
+import { userRows} from "../../data";
 import "./users.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -29,12 +29,6 @@ const columns: GridColDef[] = [
     align: "center",
   },
   {
-    field: "verified",
-    headerName: "Status",
-    width: 100,
-    type: "boolean",
-  },
-  {
     field: "firstName",
     headerName: "First name",
     width: 150, // adjust width of first name column here
@@ -48,7 +42,10 @@ const columns: GridColDef[] = [
     editable: true,
     type: "string",
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 431c28d (add single)
   {
     field: "email",
     headerName: "Email",
@@ -71,6 +68,12 @@ const columns: GridColDef[] = [
     width: 150, // adjust width of last name column here
     editable: true,
   },
+    {
+    field: "verified",
+    headerName: "Status",
+    width: 100,
+    type: "boolean",
+  },
   {
     field: "action",
     headerName: "Action",
@@ -78,7 +81,7 @@ const columns: GridColDef[] = [
     renderCell: (params) => {
       return (
         <div className="action">
-          <Link to={`/users/${params.row.id}`}>
+          <Link to={`/users/${params.row.id}`}>          
             <img src="/view.svg" alt="" />
           </Link>
           <div className="deleteUser" onClick={() => handleClick(params.row.id)} >
@@ -103,7 +106,7 @@ export const Users = () => {
         <div className="label">Users</div>
         <div className="addButton" onClick={() => setOpen(true)}>Add New User</div>
       </div>
-      <Datagrid columns={columns} rows={rows} />
+      <Datagrid columns={columns} rows={userRows} />
       {open && <Adduser slug="user" column={columns} setOpen={setOpen}/>}
     </div>
   );

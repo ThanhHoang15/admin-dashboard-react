@@ -2,7 +2,9 @@ import { Footer } from "./components/footer/Footer.tsx";
 import { Menu } from "./components/menu/Menu.tsx";
 import { Navbar } from "./components/navbar/Navbar.tsx";
 import { Home } from "./pages/home/Home";
+import { Product } from "./pages/product/product.tsx";
 import {Products} from "./pages/products/Products"
+import { User } from "./pages/singelUser/User.tsx";
 import { Users } from "./pages/users/Users.tsx";
 import "./styles/global.scss"
 
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
     {
     path: "/users",
     element: <Users/>
+    },
+    {
+    path:"/users/:id",       
+    element: <User/>,   
+    },
+     {
+    path:"/products/:id",       
+    element: <Product/>,   
     },
   ],
   },

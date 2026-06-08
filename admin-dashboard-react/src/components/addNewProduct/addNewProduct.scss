@@ -1,0 +1,68 @@
+.addNewProduct {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  rgb(43, 43, 43, 0.3);
+  color: black;
+}
+
+.modal {
+  position: relative;
+  width: 600px;
+  padding: 30px;
+  background: white;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+    .label{
+        font-size: 25px;
+    }
+  
+    .close{
+        position: absolute;
+        top:10px;
+        right:10px;
+        cursor: pointer;
+        &:hover{
+            color: rgb(245, 167, 73);
+        }
+    }
+
+
+    .newProductInfo{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 170px;
+            height: 30px;
+            padding: 5px;
+            margin-top: 5px;
+    }
+        button{
+            padding: 8px 150px;
+            margin: auto;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+         
+            &:hover{
+                background-color: rgb(219, 255, 233);
+                cursor: pointer;
+            }    
+            
+        }
+    }
+
+
+}

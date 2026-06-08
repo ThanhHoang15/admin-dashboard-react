@@ -1,12 +1,12 @@
-import { GridColDef } from "@mui/x-data-grid"
-import "./addUser.scss"
+import { GridColDef } from "@mui/x-data-grid";
+import "./addUser.scss";
 import { Dispatch, FormEvent, SetStateAction } from "react";
 
 type Props = {
-    slug: string,
-    column: GridColDef[],
-    setOpen: Dispatch<SetStateAction<boolean>>;
-}
+  slug: string;
+  column: GridColDef[];
+  setOpen: Dispatch<SetStateAction<boolean>>;
+};
 
 
 export const Adduser = (props: Props) => {

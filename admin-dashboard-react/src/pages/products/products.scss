@@ -1,3 +1,37 @@
 .products{
-    background-color: blue;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .productContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .label {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .addButton {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+.action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+
+}
+
+.productWithImg{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
 }

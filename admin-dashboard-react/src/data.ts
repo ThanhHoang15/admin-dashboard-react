@@ -1,4 +1,4 @@
-import { GridColDef } from "@mui/x-data-grid";
+
 
 export const menu = [
   {
@@ -747,165 +747,357 @@ export const userRows = [
   stock: 16,
 },]
 
-export const singleUser = {
-  id: 1,
-  title: "John Doe",
-  img: "https://images.pexels.com/photos/17397364/pexels-photo-17397364.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  info: {
-    username: "Johndoe99",
-    fullname: "John Doe",
-    email: "johndoe@gmail.com",
-    phone: "123 456 789",
-    status: "verified",
-  },
-  chart: {
-    dataKeys: [
-      { name: "visits", color: "#82ca9d" },
-      { name: "clicks", color: "#8884d8" },
-    ],
-    data: [
+export const singleUser = [
+  {
+    id: 1,
+    title: "Daenerys Targaryen",
+    img: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    info: {
+      username: "dragonqueen",
+      fullname: "Daenerys Targaryen",
+      email: "daenerys@dragonstone.com",
+      phone: "123 456 789",
+      status: "verified",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "clicks", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 4200, clicks: 2300 },
+        { name: "Mon", visits: 3900, clicks: 2800 },
+        { name: "Tue", visits: 4500, clicks: 3100 },
+        { name: "Wed", visits: 4800, clicks: 3400 },
+        { name: "Thu", visits: 4100, clicks: 2900 },
+        { name: "Fri", visits: 5200, clicks: 3900 },
+        { name: "Sat", visits: 6100, clicks: 4500 },
+      ],
+    },
+    activities: [
       {
-        name: "Sun",
-        visits: 4000,
-        clicks: 2400,
+        text: "Daenerys purchased an Ipad",
+        time: "2 days ago",
       },
       {
-        name: "Mon",
-        visits: 3000,
-        clicks: 1398,
-      },
-      {
-        name: "Tue",
-        visits: 2000,
-        clicks: 3800,
-      },
-      {
-        name: "Wed",
-        visits: 2780,
-        clicks: 3908,
-      },
-      {
-        name: "Thu",
-        visits: 1890,
-        clicks: 4800,
-      },
-      {
-        name: "Fri",
-        visits: 2390,
-        clicks: 3800,
-      },
-      {
-        name: "Sat",
-        visits: 3490,
-        clicks: 4300,
+        text: "Daenerys added 3 items into wishlist",
+        time: "1 week ago",
       },
     ],
   },
-  activities: [
-    {
-      text: "John Doe purchased Playstation 5 Digital Edition",
-      time: "3 day ago",
+
+  {
+    id: 2,
+    title: "Jon Snow",
+    img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    info: {
+      username: "thenorth",
+      fullname: "Jon Snow",
+      email: "jon@winterfell.com",
+      phone: "123 456 789",
+      status: "verified",
     },
-    {
-      text: "John Doe added 3 items into their wishlist",
-      time: "1 week ago",
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "clicks", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 2500, clicks: 1200 },
+        { name: "Mon", visits: 2800, clicks: 1600 },
+        { name: "Tue", visits: 3200, clicks: 1900 },
+        { name: "Wed", visits: 3000, clicks: 1700 },
+        { name: "Thu", visits: 3500, clicks: 2100 },
+        { name: "Fri", visits: 3800, clicks: 2400 },
+        { name: "Sat", visits: 4300, clicks: 2700 },
+      ],
     },
-    {
-      text: "John Doe purchased Sony Bravia KD-32w800",
-      time: "2 weeks ago",
-    },
-    {
-      text: "John Doe reviewed a product",
-      time: "1 month ago",
-    },
-    {
-      text: "John Doe added 1 items into their wishlist",
-      time: "1 month ago",
-    },
-    {
-      text: "John Doe reviewed a product",
-      time: "2 months ago",
-    },
-  ],
-};
-export const singleProduct = {
-  id: 1,
-  title: "Playstation 5 Digital Edition",
-  img: "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png",
-  info: {
-    productId: "Ps5SDF1156d",
-    color: "white",
-    price: "$250.99",
-    producer: "Sony",
-    export: "Japan",
-  },
-  chart: {
-    dataKeys: [
-      { name: "visits", color: "#82ca9d" },
-      { name: "orders", color: "#8884d8" },
-    ],
-    data: [
+    activities: [
       {
-        name: "Sun",
-        visits: 4000,
-        orders: 2400,
+        text: "Jon Snow purchased Longclaw",
+        time: "3 days ago",
       },
       {
-        name: "Mon",
-        visits: 3000,
-        orders: 1398,
-      },
-      {
-        name: "Tue",
-        visits: 2000,
-        orders: 3800,
-      },
-      {
-        name: "Wed",
-        visits: 2780,
-        orders: 3908,
-      },
-      {
-        name: "Thu",
-        visits: 1890,
-        orders: 4800,
-      },
-      {
-        name: "Fri",
-        visits: 2390,
-        orders: 3800,
-      },
-      {
-        name: "Sat",
-        visits: 3490,
-        orders: 4300,
+        text: "Jon Snow reviewed a product",
+        time: "1 week ago",
       },
     ],
   },
-  activities: [
-    {
-      text: "John Doe purchased Playstation 5 Digital Edition",
-      time: "3 day ago",
+
+  {
+    id: 3,
+    title: "Jaime Lannister",
+    img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    info: {
+      username: "kingslayer",
+      fullname: "Jaime Lannister",
+      email: "jaime@casterlyrock.com",
+      phone: "123 456 789",
+      status: "verified",
     },
-    {
-      text: "Jane Doe added Playstation 5 Digital Edition into their wishlist",
-      time: "1 week ago",
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "clicks", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 3100, clicks: 1700 },
+        { name: "Mon", visits: 3400, clicks: 2000 },
+        { name: "Tue", visits: 3700, clicks: 2200 },
+        { name: "Wed", visits: 4000, clicks: 2500 },
+        { name: "Thu", visits: 3900, clicks: 2400 },
+        { name: "Fri", visits: 4500, clicks: 3000 },
+        { name: "Sat", visits: 4700, clicks: 3300 },
+      ],
     },
-    {
-      text: "Mike Doe purchased Playstation 5 Digital Edition",
-      time: "2 weeks ago",
+    activities: [
+      {
+        text: "Jaime purchased Golden Armor",
+        time: "5 days ago",
+      },
+      {
+        text: "Jaime added an item to wishlist",
+        time: "2 weeks ago",
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Arya Stark",
+    img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    info: {
+      username: "noone",
+      fullname: "Arya Stark",
+      email: "arya@winterfell.com",
+      phone: "123 456 789",
+      status: "pending",
     },
-    {
-      text: "Anna Doe reviewed the product",
-      time: "1 month ago",
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "clicks", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 1800, clicks: 800 },
+        { name: "Mon", visits: 2200, clicks: 1100 },
+        { name: "Tue", visits: 2500, clicks: 1400 },
+        { name: "Wed", visits: 2700, clicks: 1600 },
+        { name: "Thu", visits: 3000, clicks: 1900 },
+        { name: "Fri", visits: 3400, clicks: 2200 },
+        { name: "Sat", visits: 4100, clicks: 2900 },
+      ],
     },
-    {
-      text: "Michael Doe added Playstation 5 Digital Edition into their wishlist",
-      time: "1 month ago",
+    activities: [
+      {
+        text: "Arya purchased Needle",
+        time: "1 day ago",
+      },
+      {
+        text: "Arya reviewed a product",
+        time: "6 days ago",
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    title: "Cersei Lannister",
+    img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    info: {
+      username: "queenregent",
+      fullname: "Cersei Lannister",
+      email: "cersei@casterlyrock.com",
+      phone: "123 456 789",
+      status: "banned",
     },
-    {
-      text: "Helen Doe reviewed the product",
-      time: "2 months ago",
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "clicks", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 5200, clicks: 2800 },
+        { name: "Mon", visits: 4900, clicks: 2600 },
+        { name: "Tue", visits: 5500, clicks: 3100 },
+        { name: "Wed", visits: 6000, clicks: 3600 },
+        { name: "Thu", visits: 5700, clicks: 3400 },
+        { name: "Fri", visits: 6300, clicks: 4000 },
+        { name: "Sat", visits: 7100, clicks: 4800 },
+      ],
     },
-  ],
-};
+    activities: [
+      {
+        text: "Cersei purchased Wine Collection",
+        time: "2 days ago",
+      },
+      {
+        text: "Cersei added 5 items into wishlist",
+        time: "1 week ago",
+      },
+    ],
+  },
+];
+
+
+export const singleProduct = [
+  {
+    id: 1,
+    title: "Playstation 5 Digital Edition",
+    img: "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png",
+    info: {
+      productId: "PS5SDF1156D",
+      color: "White",
+      price: "$499.99",
+      producer: "Sony",
+      export: "Japan",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "orders", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 4000, orders: 2400 },
+        { name: "Mon", visits: 3000, orders: 1398 },
+        { name: "Tue", visits: 2000, orders: 3800 },
+        { name: "Wed", visits: 2780, orders: 3908 },
+        { name: "Thu", visits: 1890, orders: 4800 },
+        { name: "Fri", visits: 2390, orders: 3800 },
+        { name: "Sat", visits: 3490, orders: 4300 },
+      ],
+    },
+    activities: [
+      { text: "John Doe purchased Playstation 5", time: "3 days ago" },
+      { text: "Jane Doe added Playstation 5 to wishlist", time: "1 week ago" },
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Xbox Series X",
+    img: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=800",
+    info: {
+      productId: "XBSX2258",
+      color: "Black",
+      price: "$499.99",
+      producer: "Microsoft",
+      export: "USA",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "orders", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 3500, orders: 1800 },
+        { name: "Mon", visits: 3700, orders: 2000 },
+        { name: "Tue", visits: 3900, orders: 2200 },
+        { name: "Wed", visits: 4200, orders: 2500 },
+        { name: "Thu", visits: 4500, orders: 2700 },
+        { name: "Fri", visits: 4900, orders: 3000 },
+        { name: "Sat", visits: 5300, orders: 3400 },
+      ],
+    },
+    activities: [
+      { text: "Mike purchased Xbox Series X", time: "2 days ago" },
+      { text: "Sarah reviewed Xbox Series X", time: "5 days ago" },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Nintendo Switch OLED",
+    img: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=800",
+    info: {
+      productId: "NSOLED778",
+      color: "White",
+      price: "$349.99",
+      producer: "Nintendo",
+      export: "Japan",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "orders", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 2800, orders: 1200 },
+        { name: "Mon", visits: 3000, orders: 1400 },
+        { name: "Tue", visits: 3300, orders: 1700 },
+        { name: "Wed", visits: 3500, orders: 1800 },
+        { name: "Thu", visits: 3900, orders: 2100 },
+        { name: "Fri", visits: 4300, orders: 2600 },
+        { name: "Sat", visits: 4700, orders: 2900 },
+      ],
+    },
+    activities: [
+      { text: "Anna purchased Nintendo Switch OLED", time: "1 day ago" },
+      { text: "Chris added Nintendo Switch OLED to wishlist", time: "4 days ago" },
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Apple AirPods Pro",
+    img: "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800",
+    info: {
+      productId: "APPRO9921",
+      color: "White",
+      price: "$249.99",
+      producer: "Apple",
+      export: "China",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "orders", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 5200, orders: 2600 },
+        { name: "Mon", visits: 5500, orders: 2900 },
+        { name: "Tue", visits: 5800, orders: 3200 },
+        { name: "Wed", visits: 6200, orders: 3600 },
+        { name: "Thu", visits: 6000, orders: 3400 },
+        { name: "Fri", visits: 6800, orders: 4100 },
+        { name: "Sat", visits: 7400, orders: 4800 },
+      ],
+    },
+    activities: [
+      { text: "Alex purchased AirPods Pro", time: "6 hours ago" },
+      { text: "Emma reviewed AirPods Pro", time: "2 days ago" },
+    ],
+  },
+
+  {
+    id: 5,
+    title: "Samsung Galaxy S25",
+    img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800",
+    info: {
+      productId: "SGS251234",
+      color: "Titanium Gray",
+      price: "$999.99",
+      producer: "Samsung",
+      export: "Korea",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "orders", color: "#8884d8" },
+      ],
+      data: [
+        { name: "Sun", visits: 6100, orders: 3200 },
+        { name: "Mon", visits: 6400, orders: 3500 },
+        { name: "Tue", visits: 6800, orders: 3900 },
+        { name: "Wed", visits: 7200, orders: 4200 },
+        { name: "Thu", visits: 7000, orders: 4100 },
+        { name: "Fri", visits: 7900, orders: 5000 },
+        { name: "Sat", visits: 8500, orders: 5600 },
+      ],
+    },
+    activities: [
+      { text: "David purchased Galaxy S25", time: "12 hours ago" },
+      { text: "Sophia added Galaxy S25 to wishlist", time: "3 days ago" },
+    ],
+  },
+];

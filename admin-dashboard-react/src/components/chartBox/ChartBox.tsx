@@ -62,7 +62,7 @@ export const Chartbox = (props: Props) => {
     <div className="chartBox">
       <div className="left">
         <div className="title">
-          <img src="props.icon" alt="" />
+          <img src= {props.icon} alt="img"  />
           <span>{props.title}</span>
         </div>
         <h1 className="value">{props.number}</h1>

@@ -22,7 +22,7 @@ export const menu = [
 
   {
     id: 2,
-    title: "lists",
+    title: "Management",
     listItems: [
       {
         id: 1,
@@ -42,48 +42,11 @@ export const menu = [
         url: "/orders",
         icon: "order.svg",
       },
-      {
-        id: 4,
-        title: "Posts",
-        url: "/posts",
-        icon: "post.svg",
-      },
     ],
   },
 
   {
     id: 3,
-    title: "general",
-    listItems: [
-      {
-        id: 1,
-        title: "Elements",
-        url: "/",
-        icon: "element.svg",
-      },
-      {
-        id: 2,
-        title: "Notes",
-        url: "/",
-        icon: "note.svg",
-      },
-      {
-        id: 3,
-        title: "Forms",
-        url: "/",
-        icon: "form.svg",
-      },
-      {
-        id: 4,
-        title: "Calendar",
-        url: "/",
-        icon: "calendar.svg",
-      },
-    ],
-  },
-
-  {
-    id: 4,
     title: "maintenance",
     listItems: [
       {
@@ -91,31 +54,6 @@ export const menu = [
         title: "Settings",
         url: "/",
         icon: "setting.svg",
-      },
-      {
-        id: 2,
-        title: "Backups",
-        url: "/",
-        icon: "backup.svg",
-      },
-    ],
-  },
-
-  {
-    id: 5,
-    title: "analytics",
-    listItems: [
-      {
-        id: 1,
-        title: "Charts",
-        url: "/",
-        icon: "chart.svg",
-      },
-      {
-        id: 2,
-        title: "Logs",
-        url: "/",
-        icon: "log.svg",
       },
     ],
   },
@@ -198,7 +136,7 @@ export const topDealUsers = [
 
 export const chartBoxUser = {
   color: "#8884d8",
-  icon: "/userIcon.svg",
+  icon: "/user.svg",
   title: "Total Users",
   number: "11.238",
   dataKey: "users",
@@ -297,7 +235,7 @@ export const revenueChart = [
 ]
 export const chartBoxRevenue = {
   color: "#36A2EB",
-  icon: "/revenueIcon.svg",
+  icon: "/post2.svg",
   title: "Total Revenue",
   number: "$56.432",
   dataKey: "revenue",
@@ -316,7 +254,7 @@ export const chartBoxRevenue = {
 
 export const chartBoxProducts = {
   color: "#FFBB28",
-  icon: "/productIcon.svg",
+  icon: "/log.svg",
   title: "Total Products",
   number: "238",
   dataKey: "products",
@@ -335,7 +273,7 @@ export const chartBoxProducts = {
 
 export const chartBoxRatio = {
   color: "#82ca9d",
-  icon: "/ratioIcon.svg",
+  icon: "/search.svg",
   title: "Total Ratio",
   number: "2.6",
   dataKey: "ratio",

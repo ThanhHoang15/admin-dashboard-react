@@ -8,9 +8,6 @@ export const Navbar = () => {
         <span>THANH HOANG</span>
       </div>
       <div className="icons">
-        <img src="search.svg" alt="" />
-        <img src="app.svg" alt="" />
-        <img src="expand.svg" alt="" />
         <div className="notifications">
             <img src="notifications.svg" alt="" />
             <span>1</span>

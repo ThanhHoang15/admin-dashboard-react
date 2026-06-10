@@ -102,7 +102,8 @@ export const Users = () => {
         <div className="label">Users</div>
         <div className="addButton" onClick={() => setOpen(true)}>Add New User</div>
       </div>
-      <Datagrid columns={columns} rows={userRows} />
+      <Datagrid columns={columns} rows={userRows}  
+      />
       {open && <Adduser slug="user" column={columns} setOpen={setOpen}/>}
     </div>
   );

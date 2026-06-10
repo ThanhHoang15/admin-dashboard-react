@@ -1,31 +1,44 @@
 @import "../../styles/variables.scss";
+@import "../../styles/global.scss";
 
 
-.menu{
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
- .item{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
- }
- .title{
-    font-size:12px;
-    font-weight: 200;
-    color: $soft-color;
- }
+.menu {
+   gap: 20px;
+   display: flex;
+   flex-direction: column;
 
- .listItem{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    &:hover{
-        background-color: $soft-bg; 
-    }
- }
 
+   .item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+   }
+   .title {
+      font-size: 12px;
+      font-weight: 200;
+      color: $soft-color;
+
+      @include md {
+         display: none;
+      }
+   }
+
+   .listItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      &:hover {
+         background-color: $soft-bg;
+      }
+
+      .listItemTitle {
+         @include md {
+            display: none;
+         }
+      }
+   }
 }

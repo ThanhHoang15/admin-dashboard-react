@@ -29,7 +29,7 @@ export const BarchartLeft = () => {
       itemStyle={{ color: 'yellow' }}
       labelStyle={{ color: 'yellow' }}
       cursor={{ fill: 'transparent' }}
-      labelFormatter={(label, payload) => {
+      labelFormatter={(payload) => {
         return payload?.[0]?.payload?.month
       }}
       />

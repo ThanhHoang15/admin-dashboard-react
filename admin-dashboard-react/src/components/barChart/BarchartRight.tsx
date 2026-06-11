@@ -21,7 +21,7 @@ export const BarchartRight = () => {
   data={barChartRight}
     >
   <Tooltip
-    formatter={(value) => [`$${value.toLocaleString()}`, 'Profit']}
+    formatter={(value) => [`$${(value ?? 0).toLocaleString()}`, 'Profit']}
     contentStyle={{
       background: 'transparent',
       border: 'none',
@@ -30,7 +30,7 @@ export const BarchartRight = () => {
     itemStyle={{ color: 'yellow' }}
     labelStyle={{ color: 'yellow' }}
     cursor={{ fill: 'transparent' }}
-    labelFormatter={(label, payload) => {
+    labelFormatter={(payload) => {
       return payload?.[0]?.payload?.month
     }}
     />

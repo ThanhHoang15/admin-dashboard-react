@@ -1,5 +1,5 @@
 import "./revenueChart.scss";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts';
 import { revenueChart } from "../../data";
 
 

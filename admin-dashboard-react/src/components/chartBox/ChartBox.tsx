@@ -2,56 +2,13 @@ import "./chartbox.scss";
 import { Link } from "react-router-dom";
 import { LineChart, Line, Tooltip } from "recharts";
 
-const data = [
-  {
-    name: "Sun",
-    uv: 2400,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Mon",
-    uv: 1398,
-    pv: 1398,
-    amt: 1398,
-  },
-  {
-    name: "Tue",
-    uv: 9800,
-    pv: 9800,
-    amt: 9800,
-  },
-  {
-    name: "Wed",
-    uv: 3908,
-    pv: 3908,
-    amt: 3908,
-  },
-  {
-    name: "Thu",
-    uv: 4800,
-    pv: 4800,
-    amt: 4800,
-  },
-  {
-    name: "Fri",
-    uv: 3800,
-    pv: 3800,
-    amt: 3800,
-  },
-  {
-    name: "Sat",
-    uv: 4300,
-    pv: 4300,
-    amt: 4300,
-  },
-];
+
 
 type Props = {
   color: string;
   icon: string;
   title: string;
-  number: number;
+  number: string;
   dataKey: string;
   percentage: number;
   chartData: Object[];

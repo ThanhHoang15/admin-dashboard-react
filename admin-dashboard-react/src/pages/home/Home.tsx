@@ -1,8 +1,8 @@
 import "./home.scss";
 import {Topbox} from "../../components/topBox/Topbox";
-import { Chartbox } from "../../components/chartBox/Chartbox";
+import { Chartbox } from "../../components/chartBox/ChartBox";
 import { BarchartLeft} from "../../components/barChart/BarchartLeft";
-import { BarchartRight} from "../../components/barChart/barChartRight";
+import { BarchartRight } from "../../components/barChart/BarchartRight";
 import {chartBoxUser, chartBoxRevenue, chartBoxProducts, chartBoxRatio} from "../../data";
 import { Revenuechart } from "../../components/revenueChart/Revenuechart.tsx";
 import {Piechart} from "../../components/pieChart/Piechart.tsx"

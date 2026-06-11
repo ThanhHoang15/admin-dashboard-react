@@ -1,4 +1,4 @@
-import "./chartbox.scss";
+import "./chartBox.scss";
 import { Link } from "react-router-dom";
 import { LineChart, Line, Tooltip } from "recharts";
 

@@ -1,29 +1,8 @@
 import { useState } from "react";
 import "./navbar.scss";
+import { notificationData } from "../../data";
 
-const notificationData = [
-  {
-    id: 1,
-    title: "New user registered",
-    message: "Thanh Hoang just created an account.",
-    time: "2 min ago",
-    isRead: false,
-  },
-  {
-    id: 2,
-    title: "New order received",
-    message: "Order #1024 is waiting for review.",
-    time: "15 min ago",
-    isRead: false,
-  },
-  {
-    id: 3,
-    title: "Server update",
-    message: "Dashboard data was updated successfully.",
-    time: "1 hour ago",
-    isRead: true,
-  },
-];
+
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);

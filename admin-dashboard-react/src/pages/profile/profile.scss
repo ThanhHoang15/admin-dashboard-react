@@ -1,0 +1,85 @@
+.profile{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    .adminInfo{
+        display: flex;
+        flex-direction: column;
+        border-right: 1px rgb(255, 255, 255) solid;
+        padding: 0px 50px;
+        .userInfo{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            .userName{
+                font-size: 50px;
+                color: rgb(228, 255, 233);
+
+
+            }
+
+        }
+
+
+
+    }
+
+    .feed{
+
+    margin-left: 50px;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

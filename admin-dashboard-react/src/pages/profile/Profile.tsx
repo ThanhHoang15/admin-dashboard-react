@@ -1,4 +1,7 @@
+import { useState } from "react";
+import { Adduser } from "../../components/addUser/Adduser";
 import "./profile.scss";
+import { columns } from "../../data";
 
 export const adminFeedData = [
   {
@@ -120,7 +123,6 @@ export const adminProfile = {
   username: "PeterHoang1122",
   avatar: "/avatar.jpg",
   title: "Admin",
-  position: "Dashboard Administrator",
   email: "thanh.hoang@email.com",
   phone: "(323) 555-0198",
   location: "Los Angeles, CA",
@@ -129,6 +131,9 @@ export const adminProfile = {
 };
 
 export const Profile = () => {
+
+const [open, setOpen] = useState(false)
+
   return (
     <div className="profile">
       <div className="adminInfo">
@@ -144,7 +149,6 @@ export const Profile = () => {
         <div className="info1">
           <div className="userName">Username: {adminProfile.username}</div>
           <div className="title">Title: {adminProfile.title}</div>
-          <div className="position">Position: {adminProfile.position}</div>
         </div>
 
         <div className="info2">
@@ -154,6 +158,15 @@ export const Profile = () => {
           <div className="joinedDate">Joined Date: {adminProfile.joinedDate}</div>
           <div className="lastLogin">last Login: {adminProfile.lastLogin}</div>
         </div>
+        <div className="addThings">
+          <div className="addButton" onClick={() => setOpen(true)}>Add New User</div>
+          
+
+        </div>
+        {open && <Adduser slug="user" column={columns} setOpen={setOpen}/>}
+
+
+
       </div>
 
       <div className="feed">

@@ -56,14 +56,16 @@
                 font-size: 20px;
             }
             img{
-                width: 60px;
-                height: 60px;
+                width: 70px;
+                height: 70px;
             }
             .feedNameTitle{
                 display: flex;
                 background-color: rgb(176, 176, 176);
-                padding: 6px;
+                padding-bottom: 10px;
+                padding-top: 4px;
                 padding-right: 20px;
+                padding-left: 10px;
                 flex-direction: column;
                 border-radius: 10px;
             }

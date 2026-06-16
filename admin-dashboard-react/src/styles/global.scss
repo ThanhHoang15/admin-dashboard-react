@@ -38,8 +38,6 @@ a {
 
 
 
-
-
 @mixin xm {
   @media (max-width: 576px) {
     @content;

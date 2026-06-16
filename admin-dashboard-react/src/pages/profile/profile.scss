@@ -1,6 +1,6 @@
 .profile{
     display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     .adminInfo{
         display: flex;
@@ -10,7 +10,7 @@
         .userInfo{
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 30px;
             img{
                 width: 80px;
                 height: 80px;
@@ -26,62 +26,91 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 30px;
+            margin-top: 5px;
         }
 
 
     }
 
     .feed{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 60px;
+        .header{
+            color: antiquewhite;
+            font-size: 80px;
+            
+        }
+        .feedInfo{
+            display: flex;
+            gap: 30px;
+        
+        .feedInfo1{
+            
+        .feedProfile{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            .feedName{
+                font-size: 20px;
+            }
+            img{
+                width: 60px;
+                height: 60px;
+            }
+            .feedNameTitle{
+                display: flex;
+                background-color: rgb(176, 176, 176);
+                padding: 6px;
+                padding-right: 20px;
+                flex-direction: column;
+                border-radius: 10px;
+            }
+        }
 
-    margin-left: 50px;
+    }
 
+          .editButton{
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            &:hover {
+                background-color: rgb(230, 255, 232);
+                cursor: pointer;
+            }
+        }
 
-
+    }
     }
 
 
 
+    .addButton{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 50px;
+        .addButtonUser{
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(223, 231, 255);
+            }
+        }
+          .addButtonProduct{
+            width: 120px;
+            height: 30px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(223, 231, 255);
+            }
+        }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 

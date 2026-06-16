@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Adduser } from "../../components/addUser/Adduser";
 import "./profile.scss";
-import { adminFeedData, adminProfile, columns } from "../../data";
+import { adminFeedData, adminProfile, columns, productColumns } from "../../data";
+import { Addnewproduct } from "../../components/addNewProduct/Addnewproduct";
+import { View } from "../../components/edit/View";
 
 type AdminFeedItem = {
   id: number;
@@ -17,7 +19,9 @@ type AdminFeedItem = {
 
 export const Profile = () => {
 
-const [open, setOpen] = useState(false)
+const [openUser, setOpenUser] = useState(false)
+const [openProduct, setOpenProduct] = useState(false);
+const [openView, setOpenView] = useState(false)
 
   return (
     <div className="profile">
@@ -43,28 +47,32 @@ const [open, setOpen] = useState(false)
           <div className="joinedDate">Joined Date: {adminProfile.joinedDate}</div>
           <div className="lastLogin">last Login: {adminProfile.lastLogin}</div>
         </div>
-        <div className="addThings">
-          <div className="addButton" onClick={() => setOpen(true)}>Add New User</div>
+        <div className="addButton">
+          <button className="addButtonUser" onClick={() => setOpenUser(true)}>Add New User</button>
+          <button className="addButtonProduct" onClick={() => setOpenProduct(true)}>Add New Product</button>
           
 
         </div>
-        {open && <Adduser slug="user" column={columns} setOpen={setOpen}/>}
-
+        {openUser && <Adduser slug="user" column={columns} setOpen={setOpenUser}/>}
+        {openProduct && <Addnewproduct slug="product" column={productColumns} setOpen={setOpenProduct}/>}
 
 
       </div>
 
       <div className="feed">
-        <div className="header">Feed</div>
+        <div className="header">Feed: </div>
+
         {adminFeedData.map((item: AdminFeedItem) => {
           return (
             <div key={item.id} className="feedInfo">
               <div className="feedInfo1">
-                <img src={item.avatar} alt="avatar" className="feedAvatar" />
-                <div className="nameTitle">
-                  <div className="feedName">{item.name}</div>
-                  <div className="feedTitle">{item.title}</div>
-                </div>
+                <div className="feedProfile">
+                  <img src={item.avatar} alt="avatar" className="feedAvatar" />
+                  <div className="feedNameTitle">
+                    <div className="feedName">{item.name}</div>
+                    <div className="feedTitle">{item.title}</div>
+                  </div>
+                </div>   
               </div>
 
               <div className="feedInfo2">
@@ -72,9 +80,14 @@ const [open, setOpen] = useState(false)
                 <div className="feedProduct">{item.product}</div>
                 <div className="feedDate">{item.date}</div>
               </div>
+              <button className="editButton" onClick={() => setOpenView(!openView)}>View</button>
+             
             </div>
+
+
           );
         })}
+         {openView && <View   setOpenView = {setOpenView}/>}
       </div>
     </div>
   );

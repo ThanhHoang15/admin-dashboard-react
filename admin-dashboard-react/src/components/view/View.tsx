@@ -25,7 +25,6 @@ export const View = ({ item, setSelectedFeed }: ViewProps) => {
           X
         </div>
 
-
         <div className="labelInfo">
           <div className="sendToInfo">
             <div className="viewAdminInfo1">
@@ -42,16 +41,24 @@ export const View = ({ item, setSelectedFeed }: ViewProps) => {
                 To: {item.name}
                 <div>Title: {item.title}</div>
               </div>
-                      <div className="userActivity">
-            <div>Action: {item.action}</div>
-            {item.product && <div>Product: {item.product}</div>}
-            <div>Date: {item.date}</div>
-          </div>
-
+              <div className="userActivity">
+                <div>Action: {item.action}</div>
+                {item.product && <div>Product: {item.product}</div>}
+                <div>Date: {item.date}</div>
+              </div>
             </div>
-          </div>
+            <form className="messageForm" onSubmit={(e) => e.preventDefault()}>
+              <div className="text">Message:</div>
 
-          
+              <textarea
+                className="messageBox"
+                placeholder=" Write message..."
+              ></textarea>
+
+              <div className="sendButtonBox"><button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

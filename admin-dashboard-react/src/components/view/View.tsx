@@ -1,3 +1,4 @@
+import { NULL } from "sass";
 import { adminProfile } from "../../data";
 import "./view.scss";
 
@@ -55,7 +56,7 @@ export const View = ({ item, setSelectedFeed }: ViewProps) => {
                 placeholder=" Write message..."
               ></textarea>
 
-              <div className="sendButtonBox"><button type="submit">Send</button>
+              <div className="sendButtonBox"><button type="submit" onClick={() => setSelectedFeed(null)}>Send</button>
               </div>
             </form>
           </div>

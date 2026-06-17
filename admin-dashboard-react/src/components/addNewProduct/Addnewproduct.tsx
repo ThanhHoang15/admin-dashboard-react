@@ -48,7 +48,7 @@ export const Addnewproduct = (props: Props) => {
                 </div>
               );
             })}
-          <button> Send </button>
+          <button onClick={() => props.setOpen(false)}> Send </button>
         </form>
       </div>
     </div>

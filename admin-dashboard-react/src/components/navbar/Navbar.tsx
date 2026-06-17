@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./navbar.scss";
 import { notificationData } from "../../data";
-
-
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -11,10 +10,10 @@ export const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="logo">
+      <Link to ="/" className="logo">
         <img src="logo2.jpg" alt="logo" />
         <span>THANH HOANG</span>
-      </div>
+      </Link>
 
       <div className="icons">
         <div className="notifications" onClick={() => setOpen(!open)}>
@@ -30,7 +29,8 @@ export const Navbar = () => {
                   className={
                     item.isRead ? "notificationItem" : "notificationItem unread"
                   }
-                  key={item.id}>
+                  key={item.id}
+                >
                   <div>
                     <strong>{item.title}</strong>
                     <p>{item.message}</p>
@@ -42,10 +42,10 @@ export const Navbar = () => {
           )}
         </div>
 
-        <div className="user">
+        <Link to="/profile" className="user">
           <img src="avatar.jpg" alt="avatar" />
           <span>Peter</span>
-        </div>
+        </Link>
 
         <img src="setting.svg" alt="settings" />
       </div>

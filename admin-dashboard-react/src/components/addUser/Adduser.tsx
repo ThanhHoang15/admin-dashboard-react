@@ -49,7 +49,7 @@ export const Adduser = (props: Props) => {
             </label>
           </div>
 
-          <button> Send </button>
+          <button onClick={() => props.setOpen(false)}> Send </button>
         </form>
       </div>
     </div>

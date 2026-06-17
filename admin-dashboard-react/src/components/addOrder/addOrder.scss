@@ -1,0 +1,77 @@
+.addOrder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .modal {
+        width: 800px;
+        background-color: white;
+        color: black;
+        padding: 45px;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        button{
+            width: 80px;
+            height: 30px;
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+    .closeOrder {
+        position: absolute;
+        top: 10px;
+        right: 18px;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(180, 180, 180);
+        }
+
+
+    }
+
+    .customerInfo {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .productInfo {
+        display: flex;
+        gap: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+}

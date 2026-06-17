@@ -1,4 +1,3 @@
-import { NULL } from "sass";
 import { adminProfile } from "../../data";
 import "./view.scss";
 

@@ -2,6 +2,7 @@ import { Footer } from "./components/footer/Footer.tsx";
 import { Menu } from "./components/menu/Menu.tsx";
 import { Navbar } from "./components/navbar/Navbar.tsx";
 import { Home } from "./pages/home/Home";
+import { Orders } from "./pages/orders/Orders.tsx";
 import { Product } from "./pages/product/Product";
 import { Products } from "./pages/products/Products";
 import { Profile } from "./pages/profile/Profile.tsx";
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <Profile/>,
       },
+      {
+        path: "/orders",
+        element: <Orders/>
+      }
     ],
   },
 ]);

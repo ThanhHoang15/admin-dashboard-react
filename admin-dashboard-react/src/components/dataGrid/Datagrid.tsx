@@ -11,11 +11,13 @@ export const Datagrid = (props: Props) => {
   return (
     <Box sx={{ height: "100%", width: "100%" }}>
       {" "}
-      {/* make box 100% view */}
+  
       <DataGrid
         className="dataGrid"
-        rows={props.rows}
-        columns={props.columns}
+        rows={props.rows}          
+        columns={props.columns}     
+                                   
+
         initialState={{
           pagination: {
             paginationModel: {
